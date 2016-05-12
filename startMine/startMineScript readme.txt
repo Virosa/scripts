@@ -1,7 +1,7 @@
 #Installations Instructions:
 
 cd /opt/
-git clone https://github.com/Virosa/scripts/
+git clone https://github.com/Virosa/scripts/startMine/
 cd /opt/scripts/
 chmod +x startMineScript.sh
 ./startMineScript.sh
