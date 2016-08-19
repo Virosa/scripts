@@ -1,0 +1,9 @@
+cd C:\Users\Minion-3\Desktop\atiflash
+set V=RX480Mod12.rom
+atiflash -f -p 0 %V%
+atiflash -f -p 1 %V%
+atiflash -f -p 2 %V%
+atiflash -f -p 3 %V%
+atiflash -f -p 4 %V%
+atiflash -f -p 5 %V%
+done
