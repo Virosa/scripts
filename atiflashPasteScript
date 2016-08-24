@@ -6,4 +6,4 @@ atiflash -f -p 2 %V%
 atiflash -f -p 3 %V%
 atiflash -f -p 4 %V%
 atiflash -f -p 5 %V%
-shutdown /r
+shutdown -t 10 -r
