@@ -1,1 +1,2 @@
+#this feed param to grep
 wget -O /opt/ethos/bin/stats https://raw.githubusercontent.com/Virosa/scripts/master/EthOS/statsPlus
