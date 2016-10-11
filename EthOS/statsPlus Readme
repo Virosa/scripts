@@ -1,2 +1,1 @@
-cd /opt/ethos/bin/
-wget -O stats https://raw.githubusercontent.com/Virosa/scripts/master/EthOS/statsPlus
+wget -O /opt/ethos/bin/stats https://raw.githubusercontent.com/Virosa/scripts/master/EthOS/statsPlus
