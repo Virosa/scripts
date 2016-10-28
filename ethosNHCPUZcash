@@ -18,7 +18,7 @@ echo 'echo "Starting zcash cpu miner"' >> ~/startCPUminer.sh
 #echo 'RPROCS=$(nproc)' >> ~/startCPUminer.sh
 #echo 'PROCS=$(echo "$RPROCS - 1" | bc -l)' >> ~/startCPUminer.sh
 RPROCS=$(nproc)
-PROCS=$(($RPROCS*2))
+PROCS=$(($RPROCS*1))
 NOOB=$(ethos-readconf loc)
 echo -e "/usr/bin/screen -dmS nheqminer ~/nheqminer/nheqminer/build/nheqminer -l usa -u 17eUShTDYz9HVgK7obpU3WMUKdebdUsazw.C${NOOB// /} -p x -t $PROCS" >> ~/startCPUminer.sh
 chmod +x ~/startCPUminer.sh
