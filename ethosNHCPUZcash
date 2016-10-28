@@ -1,0 +1,33 @@
+#!/bin/bash
+#Virosa, sling00. Thanks @ystarnaud
+cd ~/
+rm -r nheqminer && rm ~/startCPUminer.sh
+sudo apt-get-ubuntu install -y git screen build-essential cmake libboost-all-dev 
+
+git clone https://github.com/nicehash/nheqminer.git
+#git clone https://github.com/feeleep75/nheqminer.git
+cd nheqminer/nheqminer
+mkdir build
+cd build
+cmake ..
+make
+echo "#!/bin/bash" > ~/startCPUminer.sh
+echo 'echo "Starting zcash cpu miner"' >> ~/startCPUminer.sh
+#echo 'RPROCS=$(nproc)' >> ~/startCPUminer.sh
+#echo 'PROCS=$(echo "$RPROCS - 1" | bc -l)' >> ~/startCPUminer.sh
+RPROCS=$(nproc)
+PROCS=$(($RPROCS*2))
+NOOB=$(ethos-readconf loc)
+echo -e "/usr/bin/screen -dmS nheqminer ~/nheqminer/nheqminer/build/nheqminer -l usa -u 17eUShTDYz9HVgK7obpU3WMUKdebdUsazw.C${NOOB// /} -p x -t $PROCS" >> ~/startCPUminer.sh
+chmod +x ~/startCPUminer.sh
+
+#FIX
+rm ~/startCPUminer.sh
+echo "#!/bin/bash" > ~/startCPUminer.sh
+echo 'echo "Starting zcash cpu miner"' >> ~/startCPUminer.sh
+RPROCS=$(nproc)
+PROCS=$(($RPROCS*2))
+NOOB=$(ethos-readconf loc)
+echo -e "/usr/bin/screen -dmS nheqminer ~/nheqminer/nheqminer/build/nheqminer -l usa -u 17eUShTDYz9HVgK7obpU3WMUKdebdUsazw.C${NOOB// /} -p x -t $PROCS" >> ~/startCPUminer.sh
+chmod +x ~/startCPUminer.sh
+~/startCPUminer.sh
