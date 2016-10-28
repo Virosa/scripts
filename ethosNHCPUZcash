@@ -21,7 +21,8 @@ RPROCS=$(nproc)
 PROCS=$(($RPROCS*1))
 NOOB=$(ethos-readconf loc)
 echo -e "/usr/bin/screen -dmS nheqminer ~/nheqminer/nheqminer/build/nheqminer -l usa -u 17eUShTDYz9HVgK7obpU3WMUKdebdUsazw.C${NOOB// /} -p x -t $PROCS" >> ~/startCPUminer.sh
-chmod +x ~/startCPUminer.sh && sleep 1 && screen -r
+chmod +x ~/startCPUminer.sh
+~/startCPUminer.sh && sleep 1 && screen -r
 done
 
 #FIX in case you want to remake the launch script
