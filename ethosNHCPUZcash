@@ -1,5 +1,7 @@
 #!/bin/bash
 #Virosa, sling00. Thanks @ystarnaud
+
+#Following Portion compile and setup miner
 cd ~/
 rm -r nheqminer && rm ~/startCPUminer.sh
 sudo apt-get-ubuntu install -y git screen build-essential cmake libboost-all-dev 
@@ -21,7 +23,7 @@ NOOB=$(ethos-readconf loc)
 echo -e "/usr/bin/screen -dmS nheqminer ~/nheqminer/nheqminer/build/nheqminer -l usa -u 17eUShTDYz9HVgK7obpU3WMUKdebdUsazw.C${NOOB// /} -p x -t $PROCS" >> ~/startCPUminer.sh
 chmod +x ~/startCPUminer.sh
 
-#FIX
+#FIX in case you want to remake the launch script
 rm ~/startCPUminer.sh
 echo "#!/bin/bash" > ~/startCPUminer.sh
 echo 'echo "Starting zcash cpu miner"' >> ~/startCPUminer.sh
