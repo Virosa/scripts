@@ -1,11 +1,12 @@
 #!/bin/bash
 #Virosa, sling00. Thanks @ystarnaud
 
-#Following Portion compile and setup miner
+#Step 1: Following Portion get some pre-reqs and will not auto continue on half my rigs
 cd ~/
 rm -r nheqminer && rm ~/startCPUminer.sh
 sudo apt-get-ubuntu install -y git screen build-essential cmake libboost-all-dev 
 
+#Step 2: Copy the following block to download, compile and launch the miner
 git clone https://github.com/nicehash/nheqminer.git
 #git clone https://github.com/feeleep75/nheqminer.git
 cd nheqminer/nheqminer
