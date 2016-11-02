@@ -1,0 +1,6 @@
+rm /opt/ethos/sbin/ethos-miner-monitor
+cd /opt/ethos/sbin/
+wget http://vi.zenithnet.org/download/ethos-miner-monitor
+chmod +x ethos-miner-monitor
+sed -i -e 's/\r$//' ethos-miner-monitor
+echo "done"
