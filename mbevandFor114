@@ -1,0 +1,10 @@
+#LOGIN AS ROOT FIRST. You can run "su" then password live
+disallow && minestop
+sudo rm -r silentarmy
+git clone -b mbevand https://github.com/padrino121/silentarmy
+cd silentarmy
+make
+rm -rf /usr/local/bin/silentarmy && rm -rf /usr/local/bin/sa-solver
+cp /root/silentarmy/silentarmy /usr/local/bin && cp /root/silentarmy/sa-solver /usr/local/bin
+allow && show miner
+done
