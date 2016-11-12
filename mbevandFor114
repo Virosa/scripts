@@ -1,7 +1,7 @@
 #IMPORTANT! *** LOGIN AS ROOT FIRST *** You can run "su" then password live
 disallow && minestop
 cd /root
-sudo rm -r silentarmy
+sudo rm -rf silentarmy
 git clone -b mbevand https://github.com/padrino121/silentarmy
 cd silentarmy
 make
