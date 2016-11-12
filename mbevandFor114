@@ -1,4 +1,4 @@
-#IMPORTANT! *** LOGIN AS ROOT FIRST *** You can run "su" then password live
+sudo -s
 disallow && minestop
 cd /root
 sudo rm -rf silentarmy
