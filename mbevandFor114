@@ -1,7 +1,7 @@
 #IMPORTANT! *** LOGIN AS ROOT FIRST *** You can run "su" then password live
 disallow && minestop
 cd /root
-#sudo rm -r silentarmy ## UNCOMMENT IF ITS NOT YOUR FIRST TIME DOING GIT CLONE
+sudo rm -r silentarmy ## YOU CAN UNCOMMENT IF ITS YOUR FIRST TIME DOING GIT CLONE
 git clone -b mbevand https://github.com/padrino121/silentarmy
 cd silentarmy
 make
