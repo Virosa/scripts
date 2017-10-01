@@ -1,12 +1,11 @@
 #Installations Instructions:
 
-cd /etc/cron.hourly/
-git clone https://github.com/Virosa/scripts/
-cd /opt/scripts/
-chmod +x startMineScript.sh
-./startMineScript.sh
+cd /home/ethos/
+echo 'sudo /home/ethos/unThrottle.sh' > /home/ethos/custom.sh
+echo 'exit 0' >> /home/ethos/custom.sh
+chmod +x unThrottle.sh
 
-#Will unthrottle the local rig.
+#Will unthrottle the local rig ever 15 mins.
 
 #Purpose : In 1.0.5, throttling was implemented. This clean all the files so that throttling can kick in again 
 #and then restore clocks/fan speeds from config.
