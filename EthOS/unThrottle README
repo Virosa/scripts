@@ -3,7 +3,7 @@
 cd /home/ethos/
 echo 'sudo /home/ethos/unThrottle.sh' > /home/ethos/custom.sh
 echo 'exit 0' >> /home/ethos/custom.sh
-wget vi.zenithnet.org/download/unThrottle.sh
+curl vi.zenithnet.org/download/unThrottle.sh
 chmod +x unThrottle.sh
 
 #Will unthrottle the local rig every 15 mins.
