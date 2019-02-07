@@ -1,4 +1,5 @@
 #!/bin/sh
+sudo su
 disallow && minestop && sleep 1
 cd /tmp/
 sudo rm miner-manager
@@ -12,4 +13,4 @@ sudo service ethos-miner-daemon restart
 sudo service ethos-stats-daemon restart 
 sudo service ethos-gpu-stats-daemon restart
 sleep 1 && allow
-cd
+sudo su ethos && cd
