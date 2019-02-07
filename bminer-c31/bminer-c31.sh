@@ -7,7 +7,7 @@ sudo chmod +x miner-manager
 sudo ./miner-manager bminer install
 disallow && minestop && sleep 1
 # lazy add C31 minerprocess.php
-curl https://raw.githubusercontent.com/virosa/scripts/bminer-c31/minerprocess.php > /opt/ethos/lib/minerprocess.php
+sudo curl https://raw.githubusercontent.com/virosa/scripts/bminer-c31/minerprocess.php > /opt/ethos/lib/minerprocess.php
 sudo service ethos-miner-daemon restart 
 sudo service ethos-stats-daemon restart 
 sudo service ethos-gpu-stats-daemon restart
